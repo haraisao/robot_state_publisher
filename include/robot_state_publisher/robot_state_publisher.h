@@ -49,7 +49,7 @@
 
 namespace robot_state_publisher {
 
-class ROBOT_STATE_PUBLISHER_DECL SegmentPair
+class SegmentPair
 {
 public:
   SegmentPair(const KDL::Segment& p_segment, const std::string& p_root, const std::string& p_tip):
@@ -60,7 +60,7 @@ public:
 };
 
 
-class ROBOT_STATE_PUBLISHER_DECL RobotStatePublisher
+class RobotStatePublisher
 {
 public:
   /** Constructor
