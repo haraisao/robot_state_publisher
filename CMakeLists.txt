@@ -1,7 +1,11 @@
 cmake_minimum_required(VERSION 2.8)
 project(robot_state_publisher)
 
+if(WIN32)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall")
+else()
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall -Wextra")
+endif()
 
 find_package(orocos_kdl REQUIRED)
 find_package(catkin REQUIRED

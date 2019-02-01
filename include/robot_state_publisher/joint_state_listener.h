@@ -43,6 +43,7 @@
 #include <sensor_msgs/JointState.h>
 
 #include "robot_state_publisher/robot_state_publisher.h"
+#include "robot_state_publisher/exportdecl.h"
 
 using namespace std;
 using namespace ros;
@@ -53,7 +54,7 @@ typedef std::map<std::string, urdf::JointMimicSharedPtr > MimicMap;
 
 namespace robot_state_publisher {
 
-class JointStateListener {
+class ROBOT_STATE_PUBLISHER_DECL JointStateListener {
 public:
   /** Constructor
    * \param tree The kinematic model of a robot, represented by a KDL Tree

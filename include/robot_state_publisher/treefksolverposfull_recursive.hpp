@@ -25,10 +25,11 @@
 
 #include <kdl/tree.hpp>
 #include <tf2/transform_datatypes.h>
+#include "robot_state_publisher/exportdecl.h"
 
 namespace KDL {
 
-class TreeFkSolverPosFull_recursive
+class ROBOT_STATE_PUBLISHER_DECL TreeFkSolverPosFull_recursive
 
 {
 public:

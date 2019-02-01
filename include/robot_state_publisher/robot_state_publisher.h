@@ -45,10 +45,11 @@
 #include <kdl/frames.hpp>
 #include <kdl/segment.hpp>
 #include <kdl/tree.hpp>
+#include "robot_state_publisher/exportdecl.h"
 
 namespace robot_state_publisher {
 
-class SegmentPair
+class ROBOT_STATE_PUBLISHER_DECL SegmentPair
 {
 public:
   SegmentPair(const KDL::Segment& p_segment, const std::string& p_root, const std::string& p_tip):
@@ -59,7 +60,7 @@ public:
 };
 
 
-class RobotStatePublisher
+class ROBOT_STATE_PUBLISHER_DECL RobotStatePublisher
 {
 public:
   /** Constructor
