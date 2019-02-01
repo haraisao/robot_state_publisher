@@ -54,7 +54,7 @@ typedef std::map<std::string, urdf::JointMimicSharedPtr > MimicMap;
 
 namespace robot_state_publisher {
 
-class ROBOT_STATE_PUBLISHER_DECL JointStateListener {
+class JointStateListener {
 public:
   /** Constructor
    * \param tree The kinematic model of a robot, represented by a KDL Tree
