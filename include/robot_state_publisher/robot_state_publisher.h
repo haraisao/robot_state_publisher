@@ -66,6 +66,7 @@ public:
   /** Constructor
    * \param tree The kinematic model of a robot, represented by a KDL Tree
    */
+  ROBOT_STATE_PUBLISHER_DECL
   RobotStatePublisher(const KDL::Tree& tree, const urdf::Model& model = urdf::Model());
 
   /// Destructor
@@ -75,10 +76,13 @@ public:
    * \param joint_positions A map of joint names and joint positions.
    * \param time The time at which the joint positions were recorded
    */
+  ROBOT_STATE_PUBLISHER_DECL
   virtual void publishTransforms(const std::map<std::string, double>& joint_positions, const ros::Time& time);
+  ROBOT_STATE_PUBLISHER_DECL
   virtual void publishFixedTransforms(bool use_tf_static = false);
 
 protected:
+  ROBOT_STATE_PUBLISHER_DECL
   virtual void addChildren(const KDL::SegmentMap::const_iterator segment);
 
   std::map<std::string, SegmentPair> segments_, segments_fixed_;
